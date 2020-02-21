@@ -15,6 +15,7 @@ class MyIntroPage extends StatefulWidget {
 class _MyIntroPageState extends State<MyIntroPage> {
   List<String> itemContent = [
     'Welcome to Droplet!',
+    'HCI project to save water',
   ]; //the text in the tile
 
   @override

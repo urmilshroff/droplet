@@ -19,9 +19,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     List<String> itemNames = [
-      'Material++',
-      'Gradient Cards',
-      'About',
+      'Facts',
+      'Tips',
+      'News',
     ]; //name of each individual tile
 
     return Scaffold(
@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    'Dashboard Reborn',
+                    'Droplet',
                     style: isThemeCurrentlyDark(context)
                         ? TitleStylesDefault.white
                         : TitleStylesDefault.black,
