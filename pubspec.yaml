@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^0.1.3
   dynamic_theme: ^1.0.1
   eva_icons_flutter: ^2.0.0
   flare_flutter: ^2.0.1
@@ -36,6 +36,7 @@ flutter:
      - assets/credits/
      - assets/flare/
      - assets/icon/
+     - assets/other/
 
   fonts:
     - family: Rubik

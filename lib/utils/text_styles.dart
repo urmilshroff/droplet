@@ -30,19 +30,19 @@ class TitleStylesDefault {
 class BodyStylesDefault {
   static const white = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 16.0,
+    fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.white,
   );
   static const black = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 16.0,
+    fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.black,
   );
   static const primary = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 16.0,
+    fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.primary,
   );
@@ -51,20 +51,20 @@ class BodyStylesDefault {
 class HeadingStylesDefault {
   static const white = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 18.0,
-    fontWeight: FontWeight.w500,
+    fontSize: 22.0,
+    fontWeight: FontWeight.w700,
     color: MyColors.white,
   );
   static const black = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 18.0,
-    fontWeight: FontWeight.w500,
+    fontSize: 22.0,
+    fontWeight: FontWeight.w700,
     color: MyColors.black,
   );
   static const accent = TextStyle(
     fontFamily: 'Rubik',
-    fontSize: 18.0,
-    fontWeight: FontWeight.w500,
+    fontSize: 22.0,
+    fontWeight: FontWeight.w700,
     color: MyColors.accent,
   );
 }

@@ -62,8 +62,11 @@ class _MyIntroPageState extends State<MyIntroPage> {
                               softWrap: true,
                               overflow: TextOverflow.fade,
                             ),
-                            SizedBox(
-                              height: 20.0,
+                            Container(
+                              height: 200.0,
+                              width: 200.0,
+                              child:
+                                  Image.asset('assets/icon/icon-adaptive.png'),
                             ),
                             Text(
                               itemContent[1],
