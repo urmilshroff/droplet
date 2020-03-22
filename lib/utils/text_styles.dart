@@ -5,21 +5,21 @@ import 'colors.dart';
 
 class TitleStylesDefault {
   static const white = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.italic,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.italic,
     color: MyColors.black,
   );
   static const primary = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w600,
     fontStyle: FontStyle.italic,
@@ -29,19 +29,19 @@ class TitleStylesDefault {
 
 class BodyStylesDefault {
   static const white = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.black,
   );
   static const primary = TextStyle(
-    fontFamily: 'Rubik',
+    fontFamily: 'Sen',
     fontSize: 18.0,
     fontWeight: FontWeight.w400,
     color: MyColors.primary,
@@ -50,40 +50,40 @@ class BodyStylesDefault {
 
 class HeadingStylesDefault {
   static const white = TextStyle(
-    fontFamily: 'Rubik',
-    fontSize: 22.0,
-    fontWeight: FontWeight.w700,
+    fontFamily: 'Sen',
+    fontSize: 20.0,
+    fontWeight: FontWeight.w600,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Rubik',
-    fontSize: 22.0,
-    fontWeight: FontWeight.w700,
+    fontFamily: 'Sen',
+    fontSize: 20.0,
+    fontWeight: FontWeight.w600,
     color: MyColors.black,
   );
   static const accent = TextStyle(
-    fontFamily: 'Rubik',
-    fontSize: 22.0,
-    fontWeight: FontWeight.w700,
+    fontFamily: 'Sen',
+    fontSize: 20.0,
+    fontWeight: FontWeight.w600,
     color: MyColors.accent,
   );
 }
 
 class HeadingStylesMaterial {
   static const light = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 30.0,
     fontWeight: FontWeight.w700,
     color: MyColors.light,
   );
   static const dark = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 30.0,
     fontWeight: FontWeight.w700,
     color: MyColors.dark,
   );
   static const primary = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 30.0,
     fontWeight: FontWeight.w700,
     color: MyColors.primary,
@@ -92,19 +92,19 @@ class HeadingStylesMaterial {
 
 class SubHeadingStylesMaterial {
   static const light = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.light,
   );
   static const dark = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.dark,
   );
   static const primary = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.primary,
@@ -113,19 +113,19 @@ class SubHeadingStylesMaterial {
 
 class HeadingStylesGradient {
   static const white = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.black,
   );
   static const primary = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 20.0,
     fontWeight: FontWeight.w700,
     color: MyColors.primary,
@@ -134,19 +134,19 @@ class HeadingStylesGradient {
 
 class SubHeadingStylesGradient {
   static const white = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 16.0,
     fontWeight: FontWeight.w500,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 16.0,
     fontWeight: FontWeight.w500,
     color: MyColors.black,
   );
   static const primary = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 16.0,
     fontWeight: FontWeight.w500,
     color: MyColors.primary,
@@ -155,19 +155,19 @@ class SubHeadingStylesGradient {
 
 class LabelStyles {
   static const white = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w700,
     color: MyColors.white,
   );
   static const black = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w700,
     color: MyColors.black,
   );
   static const primary = TextStyle(
-    fontFamily: 'Quicksand',
+    fontFamily: 'Sen',
     fontSize: 22.0,
     fontWeight: FontWeight.w700,
     color: MyColors.primary,

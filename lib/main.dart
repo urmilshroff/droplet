@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return DynamicTheme(
       defaultBrightness: Brightness.dark,
       data: (brightness) => ThemeData(
-        fontFamily: 'Quicksand',
+        fontFamily: 'Sen',
         primaryColor: MyColors.primary,
         accentColor: MyColors.accent,
         brightness: brightness, // default is dark
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Droplet',
           theme: theme,
+          debugShowCheckedModeBanner: false,
           home: MyIntroPage(),
         );
       },

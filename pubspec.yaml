@@ -51,3 +51,9 @@ flutter:
         - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
         - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
         - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
+
+    - family: Sen
+      fonts:
+        - asset: assets/fonts/Sen/Sen-Regular.ttf
+        - asset: assets/fonts/Sen/Sen-Bold.ttf
+        - asset: assets/fonts/Sen/Sen-ExtraBold.ttf
