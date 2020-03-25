@@ -104,7 +104,7 @@ class _MyTipsPageState extends State<MyTipsPage> {
                                 ),
                                 Icon(
                                   EvaIcons.heart,
-                                  color: MyColors.heart,
+                                  color: MyColors.accent,
                                   size: 18.0,
                                 ),
                                 SizedBox(
@@ -140,17 +140,15 @@ class _MyTipsPageState extends State<MyTipsPage> {
                                     color: invertColorsMild(context),
                                     size: 24.0,
                                   ),
-                                  onPressed: () =>
-                                      launchURL('https://urmilshroff.tech/'),
+                                  onPressed: () => doNothing(),
                                 ),
                                 IconButton(
                                   icon: Icon(
                                     EvaIcons.twitter,
-                                    color: MyColors.twitter,
+                                    color: MyColors.accent,
                                     size: 26.0,
                                   ),
-                                  onPressed: () => launchURL(
-                                      'https://twitter.com/urmilshroff'),
+                                  onPressed: () => doNothing(),
                                 ),
                               ],
                             ),
@@ -242,8 +240,7 @@ class _MyTipsPageState extends State<MyTipsPage> {
         foregroundColor: invertInvertColorsStrong(context),
         backgroundColor: invertColorsStrong(context),
         elevation: 5.0,
-        onPressed: () =>
-            launchURL('https://github.com/urmilshroff/dashboard_reborn'),
+        onPressed: () => doNothing(),
       ),
     );
   }

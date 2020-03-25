@@ -1,3 +1,4 @@
+import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/ui_helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class SexyTile extends StatelessWidget {
         color: color,
         elevation: 10.0,
         borderRadius: BorderRadius.circular(15.0),
-        shadowColor: shadowColor(context),
+        shadowColor: MyColors.shadow,
         child: InkWell(
           child: child,
           splashColor: splashColor,

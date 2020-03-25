@@ -8,14 +8,6 @@ void doNothing() {
   print('Nothing is happening here (yet)');
 } //better than doing null-ing, right? ;)
 
-bool isIOS(BuildContext context) {
-  if (Theme.of(context).platform == TargetPlatform.iOS) {
-    return true;
-  } else {
-    return false;
-  }
-} // check if android or ios
-
 bool isThemeCurrentlyDark(BuildContext context) {
   if (Theme.of(context).brightness == Brightness.dark) {
     return true;
@@ -71,36 +63,3 @@ Color invertInvertColorsStrong(BuildContext context) {
     return MyColors.white;
   }
 } //keeps the same colors lol
-
-Color invertColorsMaterial(BuildContext context) {
-  if (isThemeCurrentlyDark(context)) {
-    return MaterialColors.orange;
-  } else {
-    return MaterialColors.yellow;
-  }
-} //returns appropriate material colors
-
-Color invertInvertColorsMaterial(BuildContext context) {
-  if (isThemeCurrentlyDark(context)) {
-    return MaterialColors.yellow;
-  } else {
-    return MaterialColors.orange;
-  }
-} //keeps the same colors lol
-
-Color shadowColor(BuildContext context) {
-  if (isThemeCurrentlyDark(context)) {
-    return ShadowColors.dark;
-  } else {
-    return ShadowColors.light;
-  }
-} //returns appropriate colors for raised element shadows
-
-launchURL(String url) async {
-  if (await canLaunch(url)) {
-    print('Launching $url...');
-    await launch(url);
-  } else {
-    print('Error launching $url!');
-  }
-} //opens a custom url in the system browser

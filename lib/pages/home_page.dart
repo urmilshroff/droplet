@@ -27,6 +27,12 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: invertInvertColorsStrong(context),
       body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [
+            MyColors.accent,
+            MyColors.primary,
+          ]),
+        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
