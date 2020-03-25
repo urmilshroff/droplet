@@ -49,8 +49,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                     child: Text(
                       'About',
                       style: isThemeCurrentlyDark(context)
-                          ? TitleStylesDefault.white
-                          : TitleStylesDefault.black,
+                          ? TitleStyles.white
+                          : TitleStyles.black,
                     ),
                   ),
                 ],
@@ -96,8 +96,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                                 Text(
                                   'with',
                                   style: isThemeCurrentlyDark(context)
-                                      ? BodyStylesDefault.white
-                                      : BodyStylesDefault.black,
+                                      ? BodyStyles.white
+                                      : BodyStyles.black,
                                 ),
                                 SizedBox(
                                   width: 6.0,
@@ -113,8 +113,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                                 Text(
                                   'by',
                                   style: isThemeCurrentlyDark(context)
-                                      ? BodyStylesDefault.white
-                                      : BodyStylesDefault.black,
+                                      ? BodyStyles.white
+                                      : BodyStyles.black,
                                 ),
                               ],
                             ),
@@ -124,8 +124,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                             Text(
                               'Urmil Shroff',
                               style: isThemeCurrentlyDark(context)
-                                  ? LabelStyles.white
-                                  : LabelStyles.black,
+                                  ? HeadingStyles.white
+                                  : HeadingStyles.black,
                               softWrap: true,
                               overflow: TextOverflow.fade,
                               maxLines: 1,
@@ -169,7 +169,7 @@ class _MyTipsPageState extends State<MyTipsPage> {
                         children: <Widget>[
                           Text(
                             itemContent[0],
-                            style: HeadingStylesDefault.accent,
+                            style: HeadingStyles.accent,
                             textAlign: TextAlign.center,
                             softWrap: true,
                             overflow: TextOverflow.fade,
@@ -180,8 +180,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                           Text(
                             itemContent[1],
                             style: isThemeCurrentlyDark(context)
-                                ? BodyStylesDefault.white
-                                : BodyStylesDefault.black,
+                                ? BodyStyles.white
+                                : BodyStyles.black,
                             textAlign: TextAlign.left,
                             softWrap: true,
                             overflow: TextOverflow.fade,
@@ -200,7 +200,7 @@ class _MyTipsPageState extends State<MyTipsPage> {
                         children: <Widget>[
                           Text(
                             itemContent[2],
-                            style: HeadingStylesDefault.accent,
+                            style: HeadingStyles.accent,
                             textAlign: TextAlign.center,
                             softWrap: true,
                             overflow: TextOverflow.fade,
@@ -211,8 +211,8 @@ class _MyTipsPageState extends State<MyTipsPage> {
                           Text(
                             itemContent[3],
                             style: isThemeCurrentlyDark(context)
-                                ? BodyStylesDefault.white
-                                : BodyStylesDefault.black,
+                                ? BodyStyles.white
+                                : BodyStyles.black,
                             textAlign: TextAlign.left,
                             softWrap: true,
                             overflow: TextOverflow.fade,

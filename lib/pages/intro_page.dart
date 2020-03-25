@@ -15,7 +15,7 @@ class MyIntroPage extends StatefulWidget {
 class _MyIntroPageState extends State<MyIntroPage> {
   List<String> itemContent = [
     'Welcome to Droplet!',
-    'HCI project to save water',
+    'An app to help you save water',
   ]; //the text in the tile
 
   @override
@@ -37,8 +37,8 @@ class _MyIntroPageState extends State<MyIntroPage> {
                   Text(
                     'Hey there!',
                     style: isThemeCurrentlyDark(context)
-                        ? TitleStylesDefault.white
-                        : TitleStylesDefault.black,
+                        ? TitleStyles.white
+                        : TitleStyles.black,
                   ),
                 ],
               ),
@@ -55,9 +55,12 @@ class _MyIntroPageState extends State<MyIntroPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
+                            SizedBox(
+                              height: 20.0,
+                            ),
                             Text(
                               itemContent[0],
-                              style: HeadingStylesDefault.accent,
+                              style: HeadingStyles.accent,
                               textAlign: TextAlign.center,
                               softWrap: true,
                               overflow: TextOverflow.fade,
@@ -71,11 +74,14 @@ class _MyIntroPageState extends State<MyIntroPage> {
                             Text(
                               itemContent[1],
                               style: isThemeCurrentlyDark(context)
-                                  ? BodyStylesDefault.white
-                                  : BodyStylesDefault.black,
+                                  ? BodyStyles.white
+                                  : BodyStyles.black,
                               textAlign: TextAlign.left,
                               softWrap: true,
                               overflow: TextOverflow.fade,
+                            ),
+                            SizedBox(
+                              height: 20.0,
                             ),
                           ],
                         ),

@@ -42,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'Droplet',
                     style: isThemeCurrentlyDark(context)
-                        ? TitleStylesDefault.white
-                        : TitleStylesDefault.black,
+                        ? TitleStyles.white
+                        : TitleStyles.black,
                   ),
                 ],
               ),
@@ -80,8 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: Text(
                                         '${itemNames[index]}',
                                         style: isThemeCurrentlyDark(context)
-                                            ? LabelStyles.white
-                                            : LabelStyles.black,
+                                            ? HeadingStyles.white
+                                            : HeadingStyles.black,
                                         softWrap: true,
                                         overflow: TextOverflow.fade,
                                         maxLines: 1,
