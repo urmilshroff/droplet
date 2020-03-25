@@ -1,4 +1,4 @@
-import 'package:droplet/pages/tips_page.dart';
+import 'package:droplet/pages/about_page.dart';
 import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
@@ -22,17 +22,21 @@ class _MyHomePageState extends State<MyHomePage> {
       'Facts',
       'Tips',
       'News',
+      'About',
     ]; //name of each individual tile
 
     return Scaffold(
       backgroundColor: invertInvertColorsStrong(context),
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
-            MyColors.accent,
-            MyColors.primary,
-          ]),
-        ),
+//        decoration: BoxDecoration(
+//          gradient: LinearGradient(
+//            begin: Alignment.topLeft,
+//            end: Alignment.bottomRight,
+//            colors: isThemeCurrentlyDark(context)
+//                ? [GradientColors.darkStart, GradientColors.darkEnd]
+//                : [GradientColors.lightStart, GradientColors.lightEnd],
+//          ),
+//        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -57,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               child: GridView.count(
                 crossAxisCount: 1,
-                childAspectRatio: 2.5,
+                childAspectRatio: 2.6,
                 children: List.generate(
                   itemNames.length,
                   (index) {
@@ -65,9 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: StackFit.expand,
                       children: <Widget>[
                         Hero(
-                          tag:
-                              'tile$index', //using a different hero widget tag for
-                          // each page mapped to the page's index value
+                          tag: 'tile$index',
                           child: SexyTile(),
                         ),
                         Container(
@@ -99,14 +101,22 @@ class _MyHomePageState extends State<MyHomePage> {
                               splashColor: MyColors.accent,
                               borderRadius: BorderRadius.circular(15.0),
                               onTap: () {
-                                Navigator.push(
-                                  context,
-                                  CupertinoPageRoute(
-                                    builder: (context) {
-                                      return MyTipsPage();
-                                    },
-                                  ),
-                                );
+                                if (index == 0) {
+                                  doNothing();
+                                } else if (index == 1) {
+                                  doNothing();
+                                } else if (index == 2) {
+                                  doNothing();
+                                } else if (index == 3) {
+                                  Navigator.push(
+                                    context,
+                                    CupertinoPageRoute(
+                                      builder: (context) {
+                                        return MyAboutPage();
+                                      },
+                                    ),
+                                  );
+                                }
                               },
                             ),
                           ),

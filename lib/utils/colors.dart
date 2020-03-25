@@ -7,12 +7,12 @@ class MyColors {
   static const dark = Color(0xff37474f);
   static const white = Color(0xfffafafa);
   static const black = Color(0xff212121);
-  static const shadow = Color(0x80718792);
+  static const shadow = Color(0x801c313a);
 } //main app colors
 
 class GradientColors {
-  static const lightStart = Color(0xffdd2c00);
-  static const lightEnd = Color(0xffffa000);
-  static const darkStart = Color(0xff304ffe);
-  static const darkEnd = Color(0xff00bcd4);
+  static const lightStart = Color(0xfffafafa);
+  static const lightEnd = Color(0xff00bcd4);
+  static const darkStart = Color(0xff212121);
+  static const darkEnd = Color(0xff212121);
 } //colors used for gradients

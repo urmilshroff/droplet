@@ -6,15 +6,15 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyTipsPage extends StatefulWidget {
+class MyAboutPage extends StatefulWidget {
   @override
-  _MyTipsPageState createState() => _MyTipsPageState();
+  _MyAboutPageState createState() => _MyAboutPageState();
 }
 
-class _MyTipsPageState extends State<MyTipsPage> {
+class _MyAboutPageState extends State<MyAboutPage> {
   List<String> itemContent = [
-    'What is this app about?',
-    'Droplet is our HCI project',
+    'About',
+    'Droplet encourages citizens to save water and makes them aware of the hidden problems that water shortages cause to our society.',
     'Credits',
     'This app was made by Urmil Shroff and Nirmit Agarwal',
   ]; //the text in the tile
@@ -60,7 +60,7 @@ class _MyTipsPageState extends State<MyTipsPage> {
               child: ListView(
                 children: <Widget>[
                   Hero(
-                    tag: 'tile2',
+                    tag: 'tile3',
                     child: SexyTile(
                       child: Padding(
                         padding: EdgeInsets.all(20.0),
@@ -68,89 +68,24 @@ class _MyTipsPageState extends State<MyTipsPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
-                            Container(
-                              width: 70.0,
-                              height: 70.0,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                image: DecorationImage(
-                                  image: AssetImage('assets/credits/urmil.png'),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 15.0,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                Icon(
-                                  EvaIcons.code,
-                                  color: invertColorsMild(context),
-                                  size: 18.0,
-                                ),
-                                SizedBox(
-                                  width: 6.0,
-                                ),
-                                Text(
-                                  'with',
-                                  style: isThemeCurrentlyDark(context)
-                                      ? BodyStyles.white
-                                      : BodyStyles.black,
-                                ),
-                                SizedBox(
-                                  width: 6.0,
-                                ),
-                                Icon(
-                                  EvaIcons.heart,
-                                  color: MyColors.accent,
-                                  size: 18.0,
-                                ),
-                                SizedBox(
-                                  width: 6.0,
-                                ),
-                                Text(
-                                  'by',
-                                  style: isThemeCurrentlyDark(context)
-                                      ? BodyStyles.white
-                                      : BodyStyles.black,
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              height: 10.0,
-                            ),
                             Text(
-                              'Urmil Shroff',
-                              style: isThemeCurrentlyDark(context)
-                                  ? HeadingStyles.white
-                                  : HeadingStyles.black,
+                              itemContent[0],
+                              style: TitleStyles.accent,
+                              textAlign: TextAlign.center,
                               softWrap: true,
                               overflow: TextOverflow.fade,
-                              maxLines: 1,
                             ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: <Widget>[
-                                IconButton(
-                                  icon: Icon(
-                                    EvaIcons.person,
-                                    color: invertColorsMild(context),
-                                    size: 24.0,
-                                  ),
-                                  onPressed: () => doNothing(),
-                                ),
-                                IconButton(
-                                  icon: Icon(
-                                    EvaIcons.twitter,
-                                    color: MyColors.accent,
-                                    size: 26.0,
-                                  ),
-                                  onPressed: () => doNothing(),
-                                ),
-                              ],
+                            SizedBox(
+                              height: 20.0,
+                            ),
+                            Text(
+                              itemContent[1],
+                              style: isThemeCurrentlyDark(context)
+                                  ? BodyStyles.white
+                                  : BodyStyles.black,
+                              textAlign: TextAlign.left,
+                              softWrap: true,
+                              overflow: TextOverflow.fade,
                             ),
                           ],
                         ),
@@ -165,24 +100,52 @@ class _MyTipsPageState extends State<MyTipsPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text(
-                            itemContent[0],
-                            style: HeadingStyles.accent,
-                            textAlign: TextAlign.center,
-                            softWrap: true,
-                            overflow: TextOverflow.fade,
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Container(
+                            width: 70.0,
+                            height: 70.0,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/credits/urmil.jpg'),
+                              ),
+                            ),
                           ),
                           SizedBox(
-                            height: 20.0,
+                            height: 15.0,
                           ),
                           Text(
-                            itemContent[1],
+                            'Urmil Shroff',
                             style: isThemeCurrentlyDark(context)
-                                ? BodyStyles.white
-                                : BodyStyles.black,
-                            textAlign: TextAlign.left,
+                                ? HeadingStyles.white
+                                : HeadingStyles.black,
                             softWrap: true,
                             overflow: TextOverflow.fade,
+                            maxLines: 1,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              IconButton(
+                                icon: Icon(
+                                  EvaIcons.person,
+                                  color: invertColorsMild(context),
+                                  size: 24.0,
+                                ),
+                                onPressed: () => doNothing(),
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  EvaIcons.twitter,
+                                  color: MyColors.accent,
+                                  size: 26.0,
+                                ),
+                                onPressed: () => doNothing(),
+                              ),
+                            ],
                           ),
                         ],
                       ),
@@ -196,24 +159,52 @@ class _MyTipsPageState extends State<MyTipsPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text(
-                            itemContent[2],
-                            style: HeadingStyles.accent,
-                            textAlign: TextAlign.center,
-                            softWrap: true,
-                            overflow: TextOverflow.fade,
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Container(
+                            width: 70.0,
+                            height: 70.0,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/credits/nirmit.jpg'),
+                              ),
+                            ),
                           ),
                           SizedBox(
-                            height: 20.0,
+                            height: 15.0,
                           ),
                           Text(
-                            itemContent[3],
+                            'Nirmit Agrawal',
                             style: isThemeCurrentlyDark(context)
-                                ? BodyStyles.white
-                                : BodyStyles.black,
-                            textAlign: TextAlign.left,
+                                ? HeadingStyles.white
+                                : HeadingStyles.black,
                             softWrap: true,
                             overflow: TextOverflow.fade,
+                            maxLines: 1,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              IconButton(
+                                icon: Icon(
+                                  EvaIcons.person,
+                                  color: invertColorsMild(context),
+                                  size: 24.0,
+                                ),
+                                onPressed: () => doNothing(),
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  EvaIcons.twitter,
+                                  color: MyColors.accent,
+                                  size: 26.0,
+                                ),
+                                onPressed: () => doNothing(),
+                              ),
+                            ],
                           ),
                         ],
                       ),

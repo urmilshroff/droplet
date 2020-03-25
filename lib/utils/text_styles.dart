@@ -32,11 +32,11 @@ class TitleStyles {
     fontStyle: FontStyle.italic,
     color: MyColors.black,
   );
-  static const primary = TextStyle(
+  static const accent = TextStyle(
     fontSize: 22.0,
     fontWeight: FontWeight.w500,
     fontStyle: FontStyle.italic,
-    color: MyColors.primary,
+    color: MyColors.accent,
   );
 }
 
@@ -51,9 +51,9 @@ class BodyStyles {
     fontWeight: FontWeight.w400,
     color: MyColors.black,
   );
-  static const primary = TextStyle(
+  static const accent = TextStyle(
     fontSize: 18.0,
     fontWeight: FontWeight.w400,
-    color: MyColors.primary,
+    color: MyColors.accent,
   );
 }
