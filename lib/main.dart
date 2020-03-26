@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DynamicTheme(
-      defaultBrightness: Brightness.dark,
+      defaultBrightness: Brightness.light,
       data: (brightness) => ThemeData(
         fontFamily: 'Sen',
         primaryColor: MyColors.primary,
