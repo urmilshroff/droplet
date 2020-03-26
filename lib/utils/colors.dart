@@ -11,8 +11,8 @@ class MyColors {
 } //main app colors
 
 class GradientColors {
-  static const lightStart = Color(0xff448aff);
-  static const lightEnd = Color(0xff8e24aa);
+  static const lightStart = Color(0xff00bfa5);
+  static const lightEnd = Color(0xff448aff);
   static const darkStart = Color(0xff304ffe);
   static const darkEnd = Color(0xff4a148c);
 } //colors used for gradients

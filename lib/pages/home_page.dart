@@ -1,5 +1,6 @@
 import 'package:droplet/pages/about_page.dart';
 import 'package:droplet/pages/facts_page.dart';
+import 'package:droplet/pages/tips_page.dart';
 import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
@@ -112,7 +113,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   );
                                 } else if (index == 1) {
-                                  doNothing();
+                                  Navigator.push(
+                                    context,
+                                    CupertinoPageRoute(
+                                      builder: (context) {
+                                        return MyTipsPage();
+                                      },
+                                    ),
+                                  );
                                 } else if (index == 2) {
                                   doNothing();
                                 } else if (index == 3) {

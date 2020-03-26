@@ -1,5 +1,7 @@
 import 'dart:math';
+
 import 'package:droplet/pages/facts_page.dart';
+import 'package:droplet/pages/tips_page.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
 import 'package:flutter/cupertino.dart';
