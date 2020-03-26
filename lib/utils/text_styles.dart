@@ -61,19 +61,19 @@ class BodyStyles {
 class StoryStyles {
   static const white = TextStyle(
     fontSize: 18.0,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     fontStyle: FontStyle.italic,
     color: MyColors.white,
   );
   static const black = TextStyle(
     fontSize: 18.0,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     fontStyle: FontStyle.italic,
     color: MyColors.black,
   );
   static const accent = TextStyle(
     fontSize: 18.0,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
     fontStyle: FontStyle.italic,
     color: MyColors.accent,
   );

@@ -2,7 +2,6 @@ import 'package:droplet/pages/facts_page.dart';
 import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/page_transformer.dart';
 import 'package:droplet/utils/text_styles.dart';
-import 'package:droplet/utils/ui_helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
@@ -101,7 +100,7 @@ class ParallaxCards extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             Colors.transparent,
-            MyColors.black,
+            MyColors.shadow,
           ],
         ),
       ),

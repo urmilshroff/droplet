@@ -23,7 +23,6 @@ class _MyHomePageState extends State<MyHomePage> {
     List<String> itemNames = [
       'Facts',
       'Story',
-      'News',
       'About',
     ]; //name of each individual tile
 
@@ -113,8 +112,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   );
                                 } else if (index == 2) {
-                                  doNothing();
-                                } else if (index == 3) {
                                   Navigator.push(
                                     context,
                                     CupertinoPageRoute(

@@ -60,7 +60,7 @@ class _MyAboutPageState extends State<MyAboutPage> {
               child: ListView(
                 children: <Widget>[
                   Hero(
-                    tag: 'tile3',
+                    tag: 'tile2',
                     child: SexyTile(
                       child: Padding(
                         padding: EdgeInsets.all(20.0),

@@ -15,7 +15,7 @@ class MyIntroPage extends StatefulWidget {
 class _MyIntroPageState extends State<MyIntroPage> {
   List<String> itemContent = [
     'Welcome to Droplet!',
-    'An app to help you save water💦',
+    'Become conscious about water💦',
   ]; //the text in the tile
 
   @override
@@ -47,7 +47,7 @@ class _MyIntroPageState extends State<MyIntroPage> {
               child: ListView(
                 children: <Widget>[
                   Hero(
-                    tag: 'tile3',
+                    tag: 'tile2',
                     child: SexyTile(
                       child: Padding(
                         padding: EdgeInsets.all(20.0),

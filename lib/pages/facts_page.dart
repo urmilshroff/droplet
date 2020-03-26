@@ -21,19 +21,35 @@ class ParallaxCardItem {
 
 final parallaxCardItemsList = <ParallaxCardItem>[
   ParallaxCardItem(
-    title: 'Blurryface',
-    body: 'Twenty One Pilots',
-    imagePath: 'assets/cards/7.jpg',
+    title: 'Did you know that water sports like surfing, sailing and '
+        'snorkeling disturb marine life?',
+    body: 'Water Sports',
+    imagePath: 'assets/cards/facts/1.jpg',
   ),
   ParallaxCardItem(
-    title: 'Free Spirit',
-    body: 'Khalid',
-    imagePath: 'assets/cards/8.jpg',
+    title: 'Every year, 14B pounds of trash is dumped into the oceans. '
+        'Imagine someone throwing all that in your house!',
+    body: 'Don\'t Pollute!',
+    imagePath: 'assets/cards/facts/2.jpg',
   ),
   ParallaxCardItem(
-    title: 'Overexposed',
-    body: 'Maroon 5',
-    imagePath: 'assets/cards/9.jpg',
+    title: 'These accidents are the worst - pollute the water and kill '
+        'thousands of '
+        'creatures living in the oceans.',
+    body: 'Oil Spills',
+    imagePath: 'assets/cards/facts/3.jpg',
+  ),
+  ParallaxCardItem(
+    title: 'Oceans reflect the blue skies. Imagine if it was the other way '
+        'around - we would see reflections of garbage in the skies!',
+    body: 'Blue Oceans',
+    imagePath: 'assets/cards/facts/4.jpg',
+  ),
+  ParallaxCardItem(
+    title: 'The oceans are a part of Earth, which is our home. Would you like'
+        ' to pollute your own home? Don\'t pollute oceans!',
+    body: 'Oceans = Home',
+    imagePath: 'assets/cards/facts/5.jpg',
   ),
 ];
 
@@ -51,7 +67,6 @@ class _MyFactsPageState extends State<MyFactsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
