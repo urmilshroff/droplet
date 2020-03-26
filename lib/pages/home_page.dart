@@ -1,4 +1,5 @@
 import 'package:droplet/pages/about_page.dart';
+import 'package:droplet/pages/facts_page.dart';
 import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
@@ -102,7 +103,14 @@ class _MyHomePageState extends State<MyHomePage> {
                               borderRadius: BorderRadius.circular(15.0),
                               onTap: () {
                                 if (index == 0) {
-                                  doNothing();
+                                  Navigator.push(
+                                    context,
+                                    CupertinoPageRoute(
+                                      builder: (context) {
+                                        return MyFactsPage();
+                                      },
+                                    ),
+                                  );
                                 } else if (index == 1) {
                                   doNothing();
                                 } else if (index == 2) {

@@ -13,6 +13,7 @@ dependencies:
   dynamic_theme: ^1.0.1
   eva_icons_flutter: ^2.0.0
   flare_flutter: ^2.0.1
+  gradient_widgets: ^0.5.2
   url_launcher: ^5.4.2
 
 dev_dependencies:
@@ -33,27 +34,12 @@ flutter:
   uses-material-design: true
 
   assets:
+     - assets/cards/
      - assets/credits/
-     - assets/flare/
      - assets/icon/
-     - assets/other/
 
   fonts:
-    - family: Rubik
-      fonts:
-        - asset: assets/fonts/Rubik/Rubik-Regular.ttf
-        - asset: assets/fonts/Rubik/Rubik-Medium.ttf
-        - asset: assets/fonts/Rubik/Rubik-Bold.ttf
-        - asset: assets/fonts/Rubik/Rubik-Italic.ttf
-
-    - family: Quicksand
-      fonts:
-        - asset: assets/fonts/Quicksand/Quicksand-Regular.ttf
-        - asset: assets/fonts/Quicksand/Quicksand-Medium.ttf
-        - asset: assets/fonts/Quicksand/Quicksand-Bold.ttf
-
     - family: Sen
       fonts:
         - asset: assets/fonts/Sen/Sen-Regular.ttf
         - asset: assets/fonts/Sen/Sen-Bold.ttf
-        - asset: assets/fonts/Sen/Sen-ExtraBold.ttf
