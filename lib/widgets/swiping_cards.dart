@@ -1,12 +1,11 @@
 import 'dart:math';
 
 import 'package:droplet/pages/facts_page.dart';
-import 'package:droplet/pages/tips_page.dart';
+import 'package:droplet/pages/story_page.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gradient_widgets/gradient_widgets.dart';
 
 //these cards are modified from https://github.com/devefy/Flutter-Story-App-UI
 
@@ -74,12 +73,11 @@ class SwipingCards extends StatelessWidget {
                               children: <Widget>[
                                 Padding(
                                   padding: EdgeInsets.all(20.0),
-                                  child: GradientText(
+                                  child: Text(
                                     swipingCardTitles[i],
-                                    shaderRect:
-                                        Rect.fromLTWH(0.0, 0.0, 50.0, 50.0),
-                                    gradient: Gradients.haze,
-                                    style: TitleStyles.white,
+                                    style: i == 2
+                                        ? StoryStyles.black
+                                        : StoryStyles.white,
                                     softWrap: false,
                                     overflow: TextOverflow.fade,
                                     maxLines: 1,

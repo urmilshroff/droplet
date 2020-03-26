@@ -6,33 +6,29 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 
 List<String> swipingCardImages = [
-  'assets/cards/1.jpg',
-  'assets/cards/2.jpg',
-  'assets/cards/3.jpg',
-  'assets/cards/4.jpg',
-  'assets/cards/5.jpg',
-  'assets/cards/6.jpg',
+  'assets/cards/story/4.jpg',
+  'assets/cards/story/3.jpg',
+  'assets/cards/story/2.jpg',
+  'assets/cards/story/1.jpg',
 ];
 
 List<String> swipingCardTitles = [
-  'Random Access Memories',
-  'Voicenotes',
-  'Stargazing',
-  'Night Visions',
-  'In A Perfect World',
-  'Native',
+  '...got filled with garbage😢',
+  'After her beautiful home...',
+  '...that\'s how Goldy feels',
+  'Imagine living alone...',
 ];
 
 PageController controller =
     PageController(initialPage: swipingCardImages.length - 1);
 var i = swipingCardImages.length - 1;
 
-class MyTipsPage extends StatefulWidget {
+class MyStoryPage extends StatefulWidget {
   @override
   _MyFactsPageState createState() => _MyFactsPageState();
 }
 
-class _MyFactsPageState extends State<MyTipsPage> {
+class _MyFactsPageState extends State<MyStoryPage> {
   var currentPage = swipingCardImages.length - 1.0;
 
   @override
@@ -84,7 +80,7 @@ class _MyFactsPageState extends State<MyTipsPage> {
                     },
                   ),
                   Text(
-                    'Tips',
+                    'Story',
                     style: TitleStyles.white,
                   ),
                 ],

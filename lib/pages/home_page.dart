@@ -1,6 +1,6 @@
 import 'package:droplet/pages/about_page.dart';
 import 'package:droplet/pages/facts_page.dart';
-import 'package:droplet/pages/tips_page.dart';
+import 'package:droplet/pages/story_page.dart';
 import 'package:droplet/utils/colors.dart';
 import 'package:droplet/utils/text_styles.dart';
 import 'package:droplet/utils/ui_helpers.dart';
@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     List<String> itemNames = [
       'Facts',
-      'Tips',
+      'Story',
       'News',
       'About',
     ]; //name of each individual tile
@@ -30,15 +30,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: invertInvertColorsStrong(context),
       body: Container(
-//        decoration: BoxDecoration(
-//          gradient: LinearGradient(
-//            begin: Alignment.topLeft,
-//            end: Alignment.bottomRight,
-//            colors: isThemeCurrentlyDark(context)
-//                ? [GradientColors.darkStart, GradientColors.darkEnd]
-//                : [GradientColors.lightStart, GradientColors.lightEnd],
-//          ),
-//        ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -117,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     context,
                                     CupertinoPageRoute(
                                       builder: (context) {
-                                        return MyTipsPage();
+                                        return MyStoryPage();
                                       },
                                     ),
                                   );
