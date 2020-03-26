@@ -68,6 +68,17 @@ class _MyAboutPageState extends State<MyAboutPage> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
+                            Container(
+                              width: 150.0,
+                              height: 150.0,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/icon/icon-adaptive.png'),
+                                ),
+                              ),
+                            ),
                             Text(
                               itemContent[0],
                               style: TitleStyles.accent,
@@ -86,6 +97,9 @@ class _MyAboutPageState extends State<MyAboutPage> {
                               textAlign: TextAlign.left,
                               softWrap: true,
                               overflow: TextOverflow.fade,
+                            ),
+                            SizedBox(
+                              height: 20.0,
                             ),
                           ],
                         ),
